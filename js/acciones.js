@@ -33,15 +33,15 @@ watchID= null;
 function Correcto(acceleration) {
 var element = document.getElementById('acelerometro');
 
-element.innerHTML = 'Aceleracion en X: ' + aceleration.x + '<br />' +
-'Aceleracion en Y: ' + acceleration.x + '<br />' +
-'Aceleracion en Z: ' + acceleration.x + '<br />' +
+element.innerHTML = 'Aceleracion en X: ' + acceleration.x + '<br />' +
+'Aceleracion en Y: ' + acceleration.y + '<br />' +
+'Aceleracion en Z: ' + acceleration.z + '<br />' +
 'Intervalo: '     + acceleration.timestamp + '<br />';
 }
 
 //Error: Falla al obtener la aceleracion
 function Error(){
-aler('Error!');
+alert('Error!');
 }
 //Exito al localizar
 function Localiza(posicion) {
@@ -50,7 +50,7 @@ element.innerHTML = 'Latitud: '        + posicion.coords.latitude      +' <br />
                     'Longitud: '        + posicion.coords.longitude                         +' <br />' +
                     'Altitud: '        + posicion.coords.altitude                         +' <br />' +
                     'Presicion: '        + posicion.coords.accuracy                         +' <br />' +
-                    'Presicion de Altitud: '        + posicion.coords.altitude                         +' <br />' +
+                    'Presicion de Altitud: '        + posicion.coords.altitudeAccuracy                         +' <br />' +
                     'Direccion: '        + posicion.coords.heading                         +' <br />' +
                     'Velocidad: '        + posicion.coords.speed                         +' <br />' +
                     'Intervalo: '        + posicion.coords.timestamp                         +' <br />' ;
